@@ -66,7 +66,7 @@
 // calculateCoins(pennies, nickels, dimes, quarters, halfDollars);
 
 
-// 1. Define Variables for Coins
+//! 1. Define Variables for Coins
 let pennies = 555;
 let nickels = 345;
 let dimes = 963;
@@ -80,7 +80,7 @@ let valueQuarters = quarters * 0.25;
 
 let totalValue = valuePennies + valueNickels + valueDimes + valueQuarters;
 
-// 3. Sort Coins into Wrappers
+//! 3. Sort Coins into Wrappers
 // Wrapper capacities
 const wrapperCapacity = {
   pennies: 50,
@@ -102,7 +102,7 @@ let remainingDimes = dimes % wrapperCapacity.dimes;
 let wrappersQuarters = Math.floor(quarters / wrapperCapacity.quarters);
 let remainingQuarters = quarters % wrapperCapacity.quarters;
 
-// 4. Output Results
+//! 4. Output Results
 console.log("Wrappers Needed:");
 console.log(`Pennies: ${wrappersPennies} wrapper(s), ${remainingPennies} loose coin(s)`);
 console.log(`Nickels: ${wrappersNickels} wrapper(s), ${remainingNickels} loose coin(s)`);
