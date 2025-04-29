@@ -1,5 +1,5 @@
 //! 1. Define Variables for Coins
-//? Input - Coin Values:
+//? Input Coin Values:
 let pennies = 555;
 let nickels = 345;
 let dimes = 963;
@@ -14,7 +14,7 @@ let valueQuarters = quarters * 0.25;
 let totalValue = valuePennies + valueNickels + valueDimes + valueQuarters;
 
 //! 3. Sort Coins into Wrappers
-// Wrapper capacities
+//? Wrapper Capacities
 const wrapperCapacity = {
   pennies: 50,
   nickels: 40,
@@ -22,7 +22,7 @@ const wrapperCapacity = {
   quarters: 40
 };
 
-// Calculate wrappers needed and remaining coins
+//? Calculate wrappers needed and remaining coins
 let wrappersPennies = Math.floor(pennies / wrapperCapacity.pennies);
 let remainingPennies = pennies % wrapperCapacity.pennies;
 
